@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFF's Test3 | ArcGIS API for JS</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/test3.css">
+    <script src="js/test3.js"></script>
+</head>
+
+<body>
+    <!-- 添加地图联动的两个视图 -->
+    <div id="viewDiv"></div>
+    <div id="view2Div"></div>
+
+    <!-- 切换底图控件 -->
+    <span id="layerToggle1" class="esri-widget">
+        <div class="imgbox" id="DeLorme_World">
+            <img src="image/terrain.png" />
+            <a href="#">
+                <div class="mask">
+                    <span>USGS Imagery<br>Topo Basemap</span>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="imgbox" id="StreetPurplishBlue">
+            <img src="image/night.png" />
+            <a href="#">
+                <div class="mask">
+                    <span>中国基础地<br>&nbsp;图-蓝黑色</span>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div class="imgbox" id="ChinaOnlineStreetWarm">
+            <img src="image/warm.png" />
+            <a href="#">
+                <div class="mask">
+                    <span>中国基础<br>地图-暖色</span>
+                </div>
+            </a>
+        </div>
+    </span>
+
+    <!-- 动态添加专题图层的控件 -->
+    <span id="layerToggle2" class="esri-widget">
+        <li class="liMenu" onclick="change(this);">
+            <div class="imgbox" id="layers">
+                <img src="image/layers.png" />
+                <a href="#">
+                    <div class="mask">
+                        <span style="font-size: 25px;">+</span>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li value="1" class="liHide">
+            <hr><input type="checkbox" id="earthquakesLayer">地震点
+        </li>
+        <li value="1" class="liHide"><input type="checkbox" id="streetsLayer">线路网</li>
+    </span>
+
+    <!-- 显示图层数量、比例尺、地理坐标的控件 -->
+    <span id="layerToggle3" class="esri-widget">
+        <div id="layerNum"></div>
+        <div id="scaleDisplay"></div>
+        <div id="coordinateDisplay"></div>
+    </span>
+
+    <!-- 卷帘的checkBox控件 -->
+    <span id="swipeToggle" class="esri-widget">
+        <div class="btns">
+            <input type="checkbox" id="vertical"> 垂直卷帘
+            <br>
+            <input type="checkbox" id="level"> 水平卷帘
+        </div>
+    </span>
+
+</body>
+
+</html>
