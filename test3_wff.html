@@ -12,12 +12,16 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/test3.css">
     <script src="js/test3.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
 </head>
 
 <body>
     <!-- 添加地图联动的两个视图 -->
     <div id="viewDiv"></div>
     <div id="view2Div"></div>
+
 
     <!-- 切换底图控件 -->
     <span id="layerToggle1" class="esri-widget">
@@ -61,10 +65,14 @@
                 </a>
             </div>
         </li>
-        <li value="1" class="liHide">
-            <hr><input type="checkbox" id="earthquakesLayer">地震点
-        </li>
-        <li value="1" class="liHide"><input type="checkbox" id="streetsLayer">线路网</li>
+        <li value="1" class="liHide"><hr><input type="checkbox" id="qiushaya_geojsonLayer">秋沙鸭</li>
+        <li value="1" class="liHide"><input type="checkbox" id="baitouhe_geojsonLayer">白头鹤</li>
+        <li value="1" class="liHide"><input type="checkbox" id="bigpanda_geojsonLayer">大熊猫</li>
+        <li value="1" class="liHide"><input type="checkbox" id="chuanshanjia_geojsonLayer">穿山甲</li>
+        <li value="1" class="liHide"><input type="checkbox" id="dongyafeihuang_geojsonLayer">东亚飞蝗</li>
+        <li value="1" class="liHide"><input type="checkbox" id="niuwa_geojsonLayer">牛蛙</li>
+        <li value="1" class="liHide"><input type="checkbox" id="zhonghuaxun_geojsonLayer">中华鲟</li>
+        <li value="1" class="liHide"><input type="checkbox" id="xiangyu_geojsonLayer">香鱼</li>
     </span>
 
     <!-- 显示图层数量、比例尺、地理坐标的控件 -->
@@ -73,16 +81,5 @@
         <div id="scaleDisplay"></div>
         <div id="coordinateDisplay"></div>
     </span>
-
-    <!-- 卷帘的checkBox控件 -->
-    <span id="swipeToggle" class="esri-widget">
-        <div class="btns">
-            <input type="checkbox" id="vertical"> 垂直卷帘
-            <br>
-            <input type="checkbox" id="level"> 水平卷帘
-        </div>
-    </span>
-
 </body>
-
 </html>
