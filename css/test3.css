@@ -10,13 +10,15 @@ body {
 #viewDiv {
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 #view2Div {
     position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 50%;
+    height: 25%;
+    width: 25%;
+    right: 0px;
+    bottom: 0%;
+    box-shadow: rgb(150, 150, 150) 0px 0px 20px 1px;
 }
 
 
@@ -34,8 +36,8 @@ body {
 }
 
 #layerToggle2 {
-    top: 400px;
-    right: 20px;
+    top: 20px;
+    right: 150px;
     position: absolute;
     z-index: 99;
     background-color: rgba(250, 250, 250, 0.6);
@@ -47,18 +49,6 @@ body {
 
 #layerToggle3 {
     bottom: 25px;
-    left: 20px;
-    position: absolute;
-    z-index: 99;
-    background-color: rgba(250, 250, 250, 0.6);
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: rgb(150, 150, 150) 0px 0px 20px 1px;
-    font-family: "站酷快乐体2016修订版";
-}
-
-#swipeToggle {
-    bottom: 120px;
     left: 20px;
     position: absolute;
     z-index: 99;
@@ -191,4 +181,10 @@ li {
 .liHide {
     display: none;
     background: blue;
+}
+
+#hello{
+    bottom: 25px;
+    left: 20px;
+    position: absolute;
 }
